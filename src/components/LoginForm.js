@@ -94,7 +94,7 @@ export class LoginForm extends Component {
                  </AppBar>
                  </ThemeProvider>
                   <form noValidate autoComplete="off">
-                  <Grid container
+                  <Grid container spacing={3}
                         direction="column"
                         justify="center"
                         alignItems="center">
@@ -103,13 +103,13 @@ export class LoginForm extends Component {
                     name="login"
                     style={{marginTop:"3rem"}}
                     label="Login"
-                    
                     variant="outlined"
                     onChange={this.handleChange}
                     />
                    <TextField 
                      required
                      name="password"
+                     type="password"
                      style={style}
                      label="Password"
                      variant="outlined"
@@ -118,6 +118,7 @@ export class LoginForm extends Component {
                    <TextField 
                      required
                      name="confirmPassword"
+                     type="password"
                      label="Confirm password"
                      variant="outlined"
                      onChange={this.handleChange}
